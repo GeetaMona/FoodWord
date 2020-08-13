@@ -1,0 +1,109 @@
+<html>
+<head>
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+     
+    <!--  jQuery 1.7+  -->
+    <script src="jquery-1.9.1.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="assets/owl-carousel/owl.carousel.js"></script>
+ <script>
+ 
+
+    $(document).ready(function() {
+     
+      var owl = $("#owl-demo");
+     
+      owl.owlCarousel({
+          items : 10, //10 items above 1000px browser width
+          itemsDesktop : [1000,5], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,3], // betweem 900px and 601px
+          itemsTablet: [600,2], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      });
+     
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+      $(".play").click(function(){
+        owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+      })
+      $(".stop").click(function(){
+        owl.trigger('owl.stop');
+      })
+     
+    });
+
+
+ 
+ 
+ </script>   
+ <style>
+ 
+
+    #owl-demo .item{
+      background: #3fbf79;
+      padding: 30px 0px;
+      margin: 10px;
+      color: #FFF;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+    }
+    .customNavigation{
+      text-align: center;
+    }
+    //use styles below to disable ugly selection
+    .customNavigation a{
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+     
+
+
+ </style>
+ </head>
+    <body>
+     
+    <div id="owl-demo" class="owl-carousel owl-theme">
+      <div class="item"><h1>1</h1></div>
+      <div class="item"><h1>2</h1></div>
+      <div class="item"><h1>3</h1></div>
+      <div class="item"><h1>4</h1></div>
+      <div class="item"><h1>5</h1></div>
+      <div class="item"><h1>6</h1></div>
+      <div class="item"><h1>7</h1></div>
+      <div class="item"><h1>8</h1></div>
+      <div class="item"><h1>9</h1></div>
+      <div class="item"><h1>10</h1></div>
+      <div class="item"><h1>11</h1></div>
+      <div class="item"><h1>12</h1></div>
+      <div class="item"><h1>13</h1></div>
+      <div class="item"><h1>14</h1></div>
+      <div class="item"><h1>15</h1></div>
+      <div class="item"><h1>16</h1></div>
+    </div>
+     
+    <div class="customNavigation">
+      <a class="btn prev">Previous</a>
+      <a class="btn next">Next</a>
+      <a class="btn play">Autoplay</a>
+      <a class="btn stop">Stop</a>
+    </div>
+
+     
+    </body>
+    </html>

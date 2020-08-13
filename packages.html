@@ -1,0 +1,536 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="Query/popup.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".nonveg-Package").hide();
+            $(".nonvegitems").click(function () {});
+        });
+    </script>
+</head>
+
+<body>
+    <div class="conatiner-fluid bannerpackage banner">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="home.html"><img src="Images/Foodword_home-assets/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="home.html"> Home <span class="sr-only">(current)</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="Aboutus.html"> About Us </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="Our_Menu.html"> Menu </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="News.html">News</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="reserveTable.html"> Reserve Tables </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="packages.html"> Packages </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="ContactUs.html"> Contact Us </a> </li>
+                    <li id="user"> <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i> </li>
+                    <li id="user"> <i class="fa fa-shopping-bag" aria-hidden="true"></i> </li>
+                </ul>
+            </div>
+        </nav>
+        <!--        nav section close-->
+        <div class="bannerhead"> Home / Packages </div>
+         <div class="Signin">
+            <p align="right" class="close" style="color: white;"><i class="fa fa-times"></i></p>
+            <h3>Sign in</h3>
+            <hr/ style="background-color: white;">
+                <input type="text" id="UserName" class="form-control" placeholder="Username">
+                <br>
+                <input type="password" id="Password" class="form-control" placeholder="Password ">
+                <br>
+                <button class="btn btn-primary" onclick="LoginValidation()">Login</button>
+                <br>
+                <br>
+                <p style="color:#fc6d40;"><u>Forgot Your Password?</u></p>
+                <p>New to FOODLAND ? <span class="next" style="color: lightblue;"><b><u>Signup</u></b></span> here</p>
+        </div>
+        <div class="Signup">
+            <p align="right" class="close" style="color: white;"><i class="fa fa-times"></i></p>
+            <h3>Sign up</h3>
+            <hr/ style="background-color: white;">
+                <input type="text" id="Name" class="form-control" placeholder="Name">
+                <br>
+                <input type="text" id="UName" class="form-control" placeholder="email/Phone No">
+                <br>
+                <input type="password" id="Password-Signup" class="form-control" placeholder="Password ">
+                <br>
+                <button class="btn btn-success" onclick="RegValidation()">Register</button>
+                <br>
+                <br>
+                <p>Already User to FOODLAND ? <span class="prev" style="color: lightblue;"><b><u>Signin</u></b></span> here</p>
+        </div>
+    </div>
+    <!-----------------Package section------------------- !-->
+    <div class="container">
+        <div class="row package">
+            <div class="col-md-4">
+                <div> <img src="Images/Foodword_Packages-assets/veg.jpg" width="100%">
+                    <h3>Veg Package</h3> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="nonvegites"> <img src="Images/Foodword_Packages-assets/nonveg.jpg" width="100%">
+                    <h3>Non-Veg Package</h3> </div>
+            </div>
+            <div class="col-md-4">
+                <div id="cust_Pack"> <img src="Images/Foodword_Packages-assets/custome.jpg" width="100%">
+                    <h3>Custom Package</h3> </div>
+            </div>
+        </div>
+    </div>
+    <div class="conatiner-fluid custom-Package">
+        <div class="container">
+            <center>
+                <h2><b>Custom Package</b></h2> </center>
+            <div class="row pt-3">
+                <div class="col-md-4 ">
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Soup <i class="fa fa-sort-down a" data-toggle="collapse" href="#soup"></i></label>
+                                    </h6> </div>
+                                <div id="soup" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="soup"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="30" class="soup"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="50" class="soup"> &nbsp;Three <span>50/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Roti <i class="fa fa-sort-down a" data-toggle="collapse" href="#roti"></i></label>
+                                    </h6> </div>
+                                <div id="roti" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="roti"> &nbsp; One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="roti"> &nbsp; Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="roti"> &nbsp; Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Rice <i class="fa fa-sort-down a" data-toggle="collapse" href="#rice"></i></label>
+                                    </h6> </div>
+                                <div id="rice" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Bhaji <i class="fa fa-sort-down a" data-toggle="collapse" href="#bhaji"></i></label>
+                                    </h6> </div>
+                                <div id="bhaji" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Main Course <i class="fa fa-sort-down a" data-toggle="collapse" href="#main"></i></label>
+                                    </h6> </div>
+                                <div id="main" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>50/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Recommended <i class="fa fa-sort-down a" data-toggle="collapse" href="#recommended"></i></label>
+                                    </h6> </div>
+                                <div id="recommended" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Rice <i class="fa fa-sort-down a" data-toggle="collapse" href="#rice"></i></label>
+                                    </h6> </div>
+                                <div id="rice" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Bhaji <i class="fa fa-sort-down a" data-toggle="collapse" href="#bhaji"></i></label>
+                                    </h6> </div>
+                                <div id="bhaji" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bill">
+                        <center>
+                            <br>
+                            <h4>Total Bill</h4>
+                            <hr>
+                            <div class="items123 pb-4">
+                                <div class="row">
+                                    <div class="col-sm-4"><b>Item Name</b></div>
+                                    <div class="col-sm-4"><b>No.Of Items</b></div>
+                                    <div class="col-sm-4"><b>cost</b></div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3"><span>Soup</span></div>
+                                    <div class="col-sm-5"><span id="soupcount"></span></div>
+                                    <div class="col-sm-4"><span id="souptotal"></span></div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-3"><span>Roti</span></div>
+                                    <div class="col-sm-5"><span id="rotitotal"></span></div>
+                                    <div class="col-sm-4"><span id="roticount"></span></div>
+                                </div>
+                                <hr />
+                                <div class="row pt-2">
+                                    <div class="col-sm-3"><b>Total </b></div>
+                                    <div class="col-sm-5"><b><span id="totalcount"></span></b></div>
+                                    <div class="col-sm-4"> <b><span id="Total"></span></b></div>
+                                </div>
+                                <br>
+                                <button class="btn btn-success" id="result">My Bill</button>
+                                <button class="btn btn-danger" id="ordernow" onclick="orderNow()">Order Now</button>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conatiner-fluid nonveg-Package">
+        <div class="container">
+            <center>
+                <h2><b>Custom Package</b></h2> </center>
+            <div class="row pt-3">
+                <div class="col-md-4 ">
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Soup <i class="fa fa-sort-down a" data-toggle="collapse" href="#soup"></i></label>
+                                    </h6> </div>
+                                <div id="soup" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="soup"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="30" class="soup"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="50" class="soup"> &nbsp;Three <span>50/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Roti <i class="fa fa-sort-down a" data-toggle="collapse" href="#roti"></i></label>
+                                    </h6> </div>
+                                <div id="roti" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="roti"> &nbsp; One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="roti"> &nbsp; Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20" class="roti"> &nbsp; Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Rice <i class="fa fa-sort-down a" data-toggle="collapse" href="#rice"></i></label>
+                                    </h6> </div>
+                                <div id="rice" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Bhaji <i class="fa fa-sort-down a" data-toggle="collapse" href="#bhaji"></i></label>
+                                    </h6> </div>
+                                <div id="bhaji" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp; Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Main Course <i class="fa fa-sort-down a" data-toggle="collapse" href="#main"></i></label>
+                                    </h6> </div>
+                                <div id="main" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>50/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Recommended <i class="fa fa-sort-down a" data-toggle="collapse" href="#recommended"></i></label>
+                                    </h6> </div>
+                                <div id="recommended" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Rice <i class="fa fa-sort-down a" data-toggle="collapse" href="#rice"></i></label>
+                                    </h6> </div>
+                                <div id="rice" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setcol">
+                        <div class="panel-group new">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h6 class="panel-title">
+                                        <label> Bhaji <i class="fa fa-sort-down a" data-toggle="collapse" href="#bhaji"></i></label>
+                                    </h6> </div>
+                                <div id="bhaji" class="panel-collapse collapse lists">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;One <span>20/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Two <span>30/-</span></li>
+                                        <li class="list-group-item">
+                                            <input type="checkbox" value="20"> &nbsp;Three <span>5 0/-</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bill">
+                        <center>
+                            <br>
+                            <h4>Total Bill</h4>
+                            <hr>
+                            <div class="items123 pb-4">
+                                <div class="row">
+                                    <div class="col-sm-4"><b>Item Name</b></div>
+                                    <div class="col-sm-4"><b>No.Of Items</b></div>
+                                    <div class="col-sm-4"><b>cost</b></div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3"><span>Soup</span></div>
+                                    <div class="col-sm-5"><span id="soupcount"></span></div>
+                                    <div class="col-sm-4"><span id="souptotal"></span></div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-3"><span>Roti</span></div>
+                                    <div class="col-sm-5"><span id="rotitotal"></span></div>
+                                    <div class="col-sm-4"><span id="roticount"></span></div>
+                                </div>
+                                <hr />
+                                <div class="row pt-2">
+                                    <div class="col-sm-3"><b>Total </b></div>
+                                    <div class="col-sm-5"><b><span id="totalcount"></span></b></div>
+                                    <div class="col-sm-4"> <b><span id="Total"></span></b></div>
+                                </div>
+                                <br>
+                                <button class="btn btn-success" id="result">My Bill</button>
+                                <button class="btn btn-danger" id="ordernow" onclick="orderNow()">Order Now</button>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------contact section ------------------- !-->
+    <div class="container contcat ">
+        <h4><b>Call Us:</b>(+91) 998 7878 767</h4> </div>
+    <!-----------------footer section ------------------- !-->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footerlogo"> <img src="Images/Foodword_home-assets/footerlogo.png"> </div>Opening Hours </div>
+            <div class="col-md-4">
+                <div class="time">
+                    <h2>Opening Hours</h2>
+                    <br>
+                    <p><b>Mon To Sat : </b> 8am To 10:00pm </p>
+                    <p><b>Sunday : </b>8am To 7:00pm </p>
+                    <p><b>Public Holiday : </b>8am To 10:00pm </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="time">
+                    <h2>Reach Us</h2>
+                    <br>
+                    <p> <img src="Images/Foodword_home-assets/locationf.png"> &nbsp;&nbsp;&nbsp; <span> The Yummmy. PO Box 00006<br> Nehru street, Coimbatore <br>Tamilnadu India</span> </p>
+                    <p><img src="Images/Foodword_home-assets/icon_phone.png"> &nbsp;&nbsp;&nbsp; Phone: (+91) 123-45689 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

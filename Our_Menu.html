@@ -1,0 +1,620 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="Query/popup.js"></script>
+</head>
+
+<body>
+    <div class="conatiner-fluid bannermenu banner">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="home.html"><img src="Images/Foodword_home-assets/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="home.html"> Home <span class="sr-only">(current)</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="Aboutus.html"> About Us </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="Our_Menu.html"> Menu </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="News.html">News</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="reserveTable.html"> Reserve Tables </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="packages.html"> Packages </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="ContactUs.html"> Contact Us </a> </li>
+                    <li id="user"> <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i> </li>
+                    <li id="user"> <i class="fa fa-shopping-bag" aria-hidden="true"></i> </li>
+                </ul>
+            </div>
+        </nav>
+        <!--        nav section close-->
+        <div class="bannerhead"> Home / Our Menu </div>
+         <div class="Signin">
+            <p align="right" class="close" style="color: white;"><i class="fa fa-times"></i></p>
+            <h3>Sign in</h3>
+            <hr/ style="background-color: white;">
+                <input type="text" id="UserName" class="form-control" placeholder="Username">
+                <br>
+                <input type="password" id="Password" class="form-control" placeholder="Password ">
+                <br>
+                <button class="btn btn-primary" onclick="LoginValidation()">Login</button>
+                <br>
+                <br>
+                <p style="color:#fc6d40;"><u>Forgot Your Password?</u></p>
+                <p>New to FOODLAND ? <span class="next" style="color: lightblue;"><b><u>Signup</u></b></span> here</p>
+        </div>
+        <div class="Signup">
+            <p align="right" class="close" style="color: white;"><i class="fa fa-times"></i></p>
+            <h3>Sign up</h3>
+            <hr/ style="background-color: white;">
+                <input type="text" id="Name" class="form-control" placeholder="Name">
+                <br>
+                <input type="text" id="UName" class="form-control" placeholder="email/Phone No">
+                <br>
+                <input type="password" id="Password-Signup" class="form-control" placeholder="Password ">
+                <br>
+                <button class="btn btn-success" onclick="RegValidation()">Register</button>
+                <br>
+                <br>
+                <p>Already User to FOODLAND ? <span class="prev" style="color: lightblue;"><b><u>Signin</u></b></span> here</p>
+        </div>
+    </div>
+    <!-----------      Menu List   ---------------- !-->
+    <div class="container pb-5">
+        <div class="header">
+            <center>
+                <h1>Today Special</h1>
+                <!--               <p style="color: red;font-size: 20px;"> Dont Miss </p>-->
+            </center>
+        </div>
+        <div class="row firstrow">
+            <div class="col-md-4">
+                <div class="item_Images" style="background-image: url(./Images/Foodword_Menu-assets/special_item1.jpg)">
+                    <center>
+                        <h2>Fish Parmentier</h2> </center>
+                    <div class="item_desc">
+                        <center>
+                            <h3>Fish Parmentier</h3> </center>
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item_Images" style="background-image: url(./Images/Foodword_Menu-assets/special_item2.jpg)">
+                    <center>
+                        <h2>Escalope de Veau</h2> </center>
+                    <div class="item_desc">
+                        <center>
+                            <h3>Escalope de Veau
+                            </h3> </center>
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item_Images" style="background-image: url(./Images/Foodword_Menu-assets/special_item3.jpg)">
+                    <center>
+                        <h2>Roast Duck Breast</h2> </center>
+                    <div class="item_desc">
+                        <center>
+                            <h3>Roast Duck Breast</h3> </center>
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row secondrow">
+            <div class="col-md-4">
+                <div class="item_Images" style="background-image: url(./Images/Foodword_Menu-assets/special_item1.jpg)">
+                    <center>
+                        <h2>Fish Parmentier</h2> </center>
+                    <div class="item_desc">
+                        <center>
+                            <h3>Fish Parmentier</h3> </center>
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item_Images" style="background-image: url(./Images/Foodword_Menu-assets/special_item2.jpg)">
+                    <center>
+                        <h2>Escalope de Veau</h2> </center>
+                    <div class="item_desc">
+                        <center>
+                            <h3>oast Duck Breast
+                            </h3> </center>
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item_Images" style="background-image: url(./Images/Foodword_Menu-assets/special_item3.jpg)">
+                    <center>
+                        <h2>Fish Parmentier</h2> </center>
+                    <div class="item_desc">
+                        <center>
+                            <h3>Fish Parmentier</h3> </center>
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <button class="btn btn-secondary btn1"><i class="fa fa-arrow-left" aria-hidden="true"></i> </button> &nbsp;&nbsp;
+            <button class="btn btn-secondary btn2"><i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+        </center>
+    </div>
+    <div class="container-fluid">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading breackfast">
+                    <h4 class="panel-title"> breakfast
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <img src="Images/Foodword_Menu-assets/arrow_Down.png" width="35px" >
+                        </a>
+                    </h4> </div>
+                <div id="collapse1" class="panel-collapse collapse show">
+                    <div class="panel-body active">
+                        <div class="row box1">
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img1.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item1<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img2.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item2<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img3.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item3<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img4.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item4<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img5.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item5<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img6.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item4<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading breackfast">
+                    <h4 class="panel-title">Lunch
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <img src="Images/Foodword_Menu-assets/arrow_Down.png" width="35px">
+                        </a>
+                    </h4> </div>
+                <div id="collapse2" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row box1">
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img1.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item1<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img2.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item2<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img3.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item3<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img4.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item4<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img5.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item5<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img6.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item6<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading breackfast">
+                    <h4 class="panel-title">Dinner
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <img src="Images/Foodword_Menu-assets/arrow_Down.png" width="35px">
+                        </a>
+                    </h4> </div>
+                <div id="collapse3" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row box1">
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img1.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item1<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img2.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item2<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img3.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item3<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img4.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item4<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img5.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item5<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img6.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item6<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading breackfast">
+                    <h4 class="panel-title">Salad
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            <img src="Images/Foodword_Menu-assets/arrow_Down.png" width="35px">
+                        </a>
+                    </h4> </div>
+                <div id="collapse4" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row box1">
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img1.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item1<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img2.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item2<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img3.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item3<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img4.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item4<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img5.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item5<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img6.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item6<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pb-5">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading breackfast">
+                    <h4 class="panel-title">Soup
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                            <img src="Images/Foodword_Menu-assets/arrow_Down.png" width="35px">
+                        </a>
+                    </h4> </div>
+                <div id="collapse5" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row box1">
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img1.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item1<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img2.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item2<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img3.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item3<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img4.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item4<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img5.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item5<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                                <div class="row sh">
+                                    <div class="col-md-2">
+                                        <center><img src="Images/Foodword_Menu-assets/food_img6.png"> </center>
+                                    </div>
+                                    <div class="col-md-9 pl-3">
+                                        <h3>Item6<span style="float: right;">
+                                                <i>RS 50/-</i></span></h3>
+                                        <hr>
+                                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------contact section ------------------- !-->
+    <div class="container contcat ">
+        <h4><b>Call Us:</b>(+91) 998 7878 767</h4> </div>
+    <!-----------------footer section ------------------- !-->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footerlogo"> <img src="Images/Foodword_home-assets/footerlogo.png"> </div>Opening Hours </div>
+            <div class="col-md-4">
+                <div class="time">
+                    <h2>Opening Hours</h2>
+                    <br>
+                    <p><b>Mon To Sat : </b> 8am To 10:00pm </p>
+                    <p><b>Sunday : </b>8am To 7:00pm </p>
+                    <p><b>Public Holiday : </b>8am To 10:00pm </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="time">
+                    <h2>Reach Us</h2>
+                    <br>
+                    <p> <img src="Images/Foodword_home-assets/locationf.png"> &nbsp;&nbsp;&nbsp; <span> The Yummmy. PO Box 00006<br> Nehru street, Coimbatore <br>Tamilnadu India</span> </p>
+                    <p><img src="Images/Foodword_home-assets/icon_phone.png"> &nbsp;&nbsp;&nbsp; Phone: (+91) 123-45689 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
