@@ -1,0 +1,692 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: serif;
+    font-style: italic;
+}
+
+.banner {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bannerhome {
+    background-image: url("../Images/Foodword_home-assets/portfolio-small-img-1.jpg");
+}
+
+.banneraboutus {
+    background-image: url("../Images/Foodword_About-us-assets/banner4.png");
+}
+
+.bannercontactus {
+    background-image: url("../Images/Foodword_contact-us-assets/contact%20banner.jpg");
+}
+
+.bannerpackage {
+    background-image: url("../Images/Foodword_Packages-assets/package1.png");
+}
+
+.bannerreserve {
+    background-image: url("../Images/Foodword_Reserve-tables-assets/banner3.png");
+}
+
+.bannermenu {
+    background-image: url("../Images/Foodword_Menu-assets/MENUBAN.png");
+}
+
+.bannernews {
+    background-image: url("../Images/Foodword_news-assets/newsban.png");
+}
+
+.third img:hover {
+    transform: scaleX(-1);
+}
+
+.cards:hover {
+    box-shadow: 0px 0px 11px 0px #dbdbdb;
+    background-color: #f013132b;
+}
+
+.today-special {
+    box-shadow: 2px 1px 7px 5px #6e6a6a;
+    background-color: white;
+    padding: 17px;
+    width: 399px;
+    border-radius: 12px;
+    /* margin-top: 52px; */
+    opacity: 0.7;
+    /* padding-top: 200; */
+    position: relative;
+    top: 150px;
+}
+
+.Signin {
+    position: absolute;
+    top: 10%px;
+    top: 17%;
+    width: 340px;
+    left: 56%;
+    border-radius: 10px;
+    background-image: url("../Images/Foodword_Login-assets/background.jpg");
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 0px 11px 2px white;
+}
+
+.Signup {
+    position: absolute;
+    top: 10%px;
+    top: 17%;
+    width: 340px;
+    left: 56%;
+    border-radius: 10px;
+    background-image: url("../Images/Foodword_Login-assets/background.jpg");
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 0px 11px 2px white;
+}
+
+.about {
+    background-image: url("../Images/Foodword_home-assets/aboutbanner.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .box {
+    padding: 116px 86px 0px;
+}
+
+.box a {
+    border: 1px solid;
+    border-radius: 10px;
+    color: red;
+    text-align: right;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.foodmenu {
+    background-image: url("../Images/Foodword_home-assets/menuback.jpg");
+    width: 100%;
+}
+
+.third label {
+    border: 2px #e6e4e4 solid;
+    padding: 11px;
+    color: whITE;
+    width: 200px;
+}
+
+.fourth {
+    background-image: url("../Images/Foodword_home-assets/background.jpg");
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 20px;
+    background-attachment: fixed;
+}
+
+.menuspace {
+    padding-left: 150px;
+    padding-top: 17px;
+}
+
+.group .fa {
+    color: white;
+    float: right;
+}
+
+.lists {
+    width: 200px;
+}
+
+.group {
+    padding-left: 50px;
+}
+
+.offerlist {
+    border: 1px solid lightgrey;
+    padding-top: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+.offerlist:hover {
+    box-shadow: 0px 15px 26px 4px #bcbcbc;
+    background-color: #f013132b;
+}
+
+
+/*
+.offerlist h3 {
+    color: goldenrod;
+}
+*/
+
+.offerlist h4 {
+    color: mediumblue;
+}
+
+.offerlist button {
+    margin: 30px 0px;
+}
+
+.footer {
+    background-image: url("../Images/Foodword_home-assets/footerbanner.jpg");
+    background-size: cover;
+}
+
+.footerlogo {
+    float: right;
+    padding: 20px 0px;
+}
+
+.specialitem .items {
+    padding: 80px;
+}
+
+.footerlogo img {
+    width: 300px;
+}
+
+.time {
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.group {
+    padding: 10px 0px 40px;
+}
+
+.navbar {
+    opacity: 0.7;
+    background-color: #000000d6;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0px 300px 0px 400px;
+    width: fit-content;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    padding-left: 100px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+}
+
+.contcat {
+    background-image: url("../Images/Foodword_About-us-assets/call_banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    color: white;
+    text-align: center;
+}
+
+.contcat h4 {
+    padding-top: 8%;
+}
+
+.testimonial p {
+    padding: 20px 390px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+@media (min-width:360px) and (max-width:640px) {
+    .Signin {
+        left: 3%;
+    }
+    .Signup {
+        left: 3%;
+    }
+    .filform {
+        padding: 33px 0px 171px 0px !important;
+    }
+    .testimonial p {
+        padding: 2px 1px;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .arrow1 {
+        position: relative;
+        left: 39%;
+    }
+    .cards {
+        width: 330px;
+    }
+    .about .box {
+        padding: 0px 10px 0px;
+        text-align: justify;
+    }
+    .about img {
+        width: 329px;
+    }
+    .today-special {
+        box-shadow: 2px 1px 7px 5px #6e6a6a;
+        background-color: white;
+        padding: 17px;
+        width: 326px;
+        border-radius: 12px;
+        /* margin-top: 52px; */
+        opacity: 0.7;
+        /* padding-top: 200; */
+        position: relative;
+        top: 150px;
+    }
+    .specialitem .items {
+        padding: 10px;
+    }
+    .menuspace {
+        padding-left: 53px;
+        padding-top: 17px;
+    }
+    .menuspace img {
+        width: 180px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+    }
+    .navbar-nav {
+        padding-left: 0px;
+    }
+    .navbar {
+        opacity: 0.7;
+        background-color: #000000d6;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 7px;
+        width: 347px;
+    }
+    .navbar-nav {
+        padding-left: 0px;
+    }
+    .contcat h4 {
+        padding-top: 26%;
+    }
+    .specialitem img {
+        padding: 0px;
+        width: 100%;
+        padding-top: 13px;
+    }
+    .information {
+        padding: 0px 26px 10px 0px;
+        font-size: 16px;
+        text-align: justify;
+        position: relative;
+        left: 10%;
+    }
+    .sh {
+        width: 353px;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+    .subscribe {
+        background-image: url(http://127.0.0.1:64758/Images/Foodword_news-assets/subscribe.jpg);
+        padding: 6px 0px 13px 5% !important;
+        color: white;
+        background-size: cover;
+    }
+    .contoverlap {
+        position: relative;
+        left: 0px !important;
+        z-index: 1;
+        box-shadow: -1px 0px 5px;
+        padding: 40px 42px;
+        top: -10px !important;
+        background: white;
+        text-align: justify;
+    }
+    .contoverlapleft {
+        position: relative;
+        left: 0px !important;
+        z-index: 1;
+        box-shadow: -1px 0px 5px;
+        padding: 40px 42px;
+        top: 33px;
+        background: white;
+        text-align: justify;
+    }
+    .contdesc {
+        padding: 42px 12px !important;
+        margin-left: 0px !important;
+        box-shadow: 0px 0px 8px 0px !important;
+        position: relative;
+    }
+}
+
+.peoplebannner {
+    width: 100%;
+}
+
+.showpro {
+    margin: 50px;
+}
+
+.showpro h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.testimonial {
+    background-image: url("../Images/Foodword_About-us-assets/testimonialbanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+/*carousel*/
+
+.arrow1 {
+    position: relative;
+    top: -8px;
+    left: 47%;
+    width: 39px;
+}
+
+.arrow2 {
+    position: relative;
+    left: 48%;
+    top: -7px;
+}
+
+.specialitem {
+    padding: 30px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.bannerhead {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    top: 50%;
+    position: relative;
+}
+
+.C_location {
+    padding: 110px 20px 45px 0px;
+}
+
+.C_hours {
+    padding: 60px 21px 22px 2px;
+}
+
+.contactback {
+    background-image: url(../Images/Foodword_contact-us-assets/backgroundimg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.filform {
+    padding: 37px 127px 211px 0px;
+}
+
+.filform .form-control {
+    background-color: lightgrey;
+    height: 57px;
+    border-radius: 10px;
+    opacity: .5;
+    border: 2px solid gray;
+}
+
+.form-control::placeholder {
+    color: black;
+    font-weight: lighter;
+}
+
+.contactback fa {
+    width: 20px;
+    height: 20px;
+}
+
+#txtarea {
+    border: 2px solid gray;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    /* color: black; */
+    background-color: white;
+}
+
+li .fa {
+    padding: 12px;
+}
+
+.item_Images {
+    /*    background-image: url(../Images/Foodword_Menu-assets/special_item1.jpg);*/
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.item_Images:hover {
+    background-color: black;
+}
+
+.item_desc {
+    padding: 0px 29px;
+    text-align: justify;
+    background-color: #020202;
+    opacity: .7;
+    position: relative;
+    top: 68%;
+    height: 126px;
+    color: white;
+    display: none;
+    border-top-right-radius: 86px;
+    border-top-left-radius: 86px;
+}
+
+.header {
+    padding: 30px 0px;
+}
+
+#parallelogram {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+}
+
+.item_Images h2 {
+    padding-top: 172px;
+    color: black;
+    font-weight: bold;
+}
+
+.breackfast {
+    background-image: url("../Images/Foodword_Menu-assets/BreckFast_banner.jpg");
+    width: 100%;
+    padding: 40px;
+    color: white;
+}
+
+.breackfast a {
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+.leftimg {
+    width: 92px;
+    height: 92px;
+    background-size: cover;
+}
+
+.sh {
+    text-align: justify;
+    padding: 20px 0px;
+}
+
+.panel h4 {
+    text-align: center;
+}
+
+.newsSection {
+    padding-top: 20px;
+}
+
+.contdesc {
+    padding: 42px 76px;
+    margin-left: 83px;
+    box-shadow: 0px 0px 8px 0px;
+}
+
+.contdesc:hover {
+    background-color: #f013132b;
+}
+
+.contoverlap:hover {
+    background-color: #f013132b;
+}
+
+.subscribe {
+    background-image: url(../Images/Foodword_news-assets/subscribe.jpg);
+    padding: 50px 0px 50px 21%;
+    color: white;
+    background-size: cover;
+}
+
+.contoverlap {
+    position: relative;
+    /* margin-left: 88px; */
+    left: 91px;
+    z-index: 1;
+    box-shadow: -1px 0px 5px;
+    padding: 40px 42px;
+    top: 33px;
+    background: white;
+    text-align: justify;
+}
+
+.contoverlapleft {
+    position: relative;
+    /* margin-left: 88px; */
+    left: -91px;
+    z-index: 1;
+    box-shadow: -1px 0px 5px;
+    padding: 40px 42px;
+    top: 33px;
+    background: white;
+    text-align: justify;
+}
+
+.datetime {
+    padding: 79px 0px;
+}
+
+.back {
+    background-image: url(../Images/Foodword_Reserve-tables-assets/photo-1517248135467-4c7edcad34c4.png);
+    background-attachment: fixed;
+    padding: 100px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reservebox {
+    padding: 92px 51px 31px;
+    opacity: 0.8;
+    border: 1px solid white;
+    box-shadow: inset 10px 12px 28px 11px #a8a5a5;
+    border-radius: 382px;
+}
+
+.reservebox h1 {
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu {
+    display: block;
+}
+
+.package {
+    padding: 20px 0px;
+}
+
+.package h3 {
+    background-color: dimgrey;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.package h3:hover {
+    box-shadow: 0px 0px 3px 2px #2e2e2d;
+    border: 1px solid;
+}
+
+.custom-Package {
+    background-image: url("../Images/Foodword_Packages-assets/custome_Package.png");
+    padding: 30px 0px 20px;
+    background-size: cover;
+}
+
+.custom-Package .setcol {
+    padding-bottom: 20px;
+}
+
+.custom-Package .new {
+    border: 1px solid gray;
+    width: 314px;
+    background: black;
+    opacity: 0.8;
+    color: white;
+    padding: 10px 0px 0px;
+}
+
+
+/*.custom-Package .new .fa{padding-left: 140px;}*/
+
+.new ul {
+    width: 313px;
+    color: black
+}
+
+.new ul span {
+    float: right;
+}
+
+.new .panel h6 {
+    text-align: center;
+}
+
+.bill {
+    background-color: #ffcd11cc;
+    text-align: left;
+    border-radius: 10px;
+}
+#modal-body{
+text-align: center;
+padding: 20px;
+}
